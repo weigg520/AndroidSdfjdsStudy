@@ -10,11 +10,14 @@ import android.widget.ListView;
 
 import com.weizhengzhou.androidsdfjdsstudy.R;
 import com.weizhengzhou.androidsdfjdsstudy.animation_demo.view.AnimationActivity;
+import com.weizhengzhou.androidsdfjdsstudy.home_demo.view.IndexActivity;
 import com.weizhengzhou.androidsdfjdsstudy.main.adapter.MainAdapter;
 import com.weizhengzhou.androidsdfjdsstudy.main.bean.MainBean;
 import com.weizhengzhou.androidsdfjdsstudy.test_demo.UITestActivity.AdhesionActivity;
 import com.weizhengzhou.androidsdfjdsstudy.test_demo.UITestActivity.TextViewUiActivity;
 import com.weizhengzhou.androidsdfjdsstudy.test_demo.WaveActivity;
+import com.weizhengzhou.androidsdfjdsstudy.wifi_demo.WifiConnectActivity;
+import com.weizhengzhou.androidsdfjdsstudy.wifi_demo.WifiDemoActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mMainList.add(getMainBean("波浪View", WaveActivity.class));
         mMainList.add(getMainBean("粘合View", AdhesionActivity.class));
         mMainList.add(getMainBean("动画基础", AnimationActivity.class));
+        mMainList.add(getMainBean("Wifi设置", WifiConnectActivity.class));
+        mMainList.add(getMainBean("Wifi设置2", WifiDemoActivity.class));
+        mMainList.add(getMainBean("轮播图", IndexActivity.class));
     }
 
     /**

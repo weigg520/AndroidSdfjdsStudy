@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerPager">
+        <attr name="dot_size" format="dimension"/>
+        <attr name="dot_normal" format="reference"/>
+        <attr name="dot_select" format="reference"/>
+    </declare-styleable>
+</resources>

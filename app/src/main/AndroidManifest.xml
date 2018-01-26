@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.weizhengzhou.androidsdfjdsstudy">
 
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,6 +28,12 @@
         <activity android:name=".test_demo.WaveActivity"/>
         <activity android:name=".test_demo.UITestActivity.AdhesionActivity"/>
         <activity android:name=".animation_demo.view.AnimationActivity">
+        </activity>
+        <activity android:name=".wifi_demo.WifiConnectActivity">
+        </activity>
+        <activity android:name=".home_demo.view.IndexActivity">
+        </activity>
+        <activity android:name=".wifi_demo.WifiDemoActivity">
         </activity>
     </application>
 
