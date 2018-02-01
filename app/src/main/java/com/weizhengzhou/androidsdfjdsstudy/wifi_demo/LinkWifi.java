@@ -7,7 +7,6 @@ import android.net.wifi.WifiManager;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -44,6 +43,10 @@ public class LinkWifi {
         return mLinkWifi;
     }
 
+    /**
+     * 检测wifi状态
+     * @return
+     */
     public boolean checkWifiState() {
         boolean isOpen = true;
         int wifiState = wifimanager.getWifiState();
@@ -335,7 +338,8 @@ public class LinkWifi {
                 boolean found = false;
                 for(ScanResult item: mResults){
                     if(item.SSID.equals(result.SSID)&&item.capabilities.equals(result.capabilities)){
-                        found = true;break;
+                        found = true;
+                        break;
                     }
                 }
                 if(!found){
@@ -348,5 +352,16 @@ public class LinkWifi {
     // 得到网络列表
     public List<ScanResult> getWifiList() {
         return mResults;
+    }
+
+    /**
+     * 开启Wifi
+     */
+    public void openWifi(){
+        if (!wifimanager.isWifiEnabled()){
+            wifimanager.setWifiEnabled(true);
+        }else {
+            return;
+        }
     }
 }

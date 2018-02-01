@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.weizhengzhou.androidsdfjdsstudy.R;
+import com.weizhengzhou.androidsdfjdsstudy.base.IRecyclerListener;
 import com.weizhengzhou.androidsdfjdsstudy.base.RecyclerAdapter;
 
 import java.util.List;
@@ -20,8 +21,8 @@ import java.util.List;
 
 public class WifiAdapter extends RecyclerAdapter<ScanResult>{
 
-    public WifiAdapter(Context context, List<ScanResult> list) {
-        super(context, list);
+    public WifiAdapter(Context context, List<ScanResult> list , IRecyclerListener listener) {
+        super(context, list ,listener);
     }
 
     @Override
