@@ -17,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoTitleBar">
-        <activity android:name=".main.MainActivity">
+        <activity android:name=".main.MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -29,11 +30,15 @@
         <activity android:name=".test_demo.UITestActivity.AdhesionActivity"/>
         <activity android:name=".animation_demo.view.AnimationActivity">
         </activity>
-        <activity android:name=".wifi_demo.WifiConnectActivity">
+        <activity android:name=".wifi_demo.WifiConnectActivity"
+            android:screenOrientation="landscape"
+            >
         </activity>
         <activity android:name=".home_demo.view.IndexActivity">
         </activity>
-        <activity android:name=".wifi_demo.WifiDemoActivity">
+        <activity android:name=".wifi_demo.WifiDemoActivity"
+                  android:screenOrientation="landscape"
+            >
         </activity>
     </application>
 

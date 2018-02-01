@@ -13,12 +13,8 @@ import com.weizhengzhou.androidsdfjdsstudy.R;
  */
 
 public class WifiDialog extends Dialog {
-    public WifiDialog(@NonNull Context context) {
-        super(context);
-    }
-
-    public WifiDialog(@NonNull Context context, @StyleRes int themeResId) {
-        super(context, R.style.NoTitleBar);
+    public WifiDialog(Context context) {
+        super(context , R.style.MyDialogStyle);
     }
 
     @Override
